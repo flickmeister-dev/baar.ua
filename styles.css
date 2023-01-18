@@ -525,6 +525,7 @@ html{
 }
 
 .title-about-company {
+    margin: 30px 0 30px 0;
     font-size: 24px;
     line-height: 1.5;
     font-weight: 400;
