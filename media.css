@@ -66,6 +66,10 @@
     .aboutCompany-image {
 
     }
+
+    .map-container {
+        padding-top: 35px;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
@@ -261,6 +265,14 @@
 
     .border-row-contacts {
         width: 150px;
+    }
+
+    .feedback-title {
+        width: 100%;
+    }
+
+    .later {
+        padding-top: 0;
     }
 }
 

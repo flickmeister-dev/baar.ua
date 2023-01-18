@@ -33,10 +33,19 @@ html{
     cursor: pointer;
 }
 
+.feedback-form h4 {
+    padding-top: 25px;
+}
+
 .button-call-me:hover {
     color: black;
     background-color: white;
     border: 2px solid yellow;
+}
+
+.button-call-me a {
+    text-decoration: none;
+    color: black;
 }
 
 .feedback-body {
@@ -104,14 +113,10 @@ html{
 }
 
 .input-name {
-    height: 25px;
-    padding-bottom: 45px;
 }
 
 .input-phone {
-    height: 25px;
     margin-top: 10px;
-    padding-bottom: 45px;
 }
 
 .form-input-email {
@@ -218,7 +223,7 @@ html{
     top: 0;
     position: fixed;
     background-color: rgba(0,0,0,0.6);
-    z-index: 9999999;
+    z-index: 999999;
 }
 
 .feedback-end.active {
@@ -255,8 +260,8 @@ html{
 
 .later {
     padding-top: 10px;
-    font-size: 19px;
-    font-weight: bold;
+    font-size: 25px;
+
 }
 
 .feedback-img-end {
@@ -815,7 +820,7 @@ html{
 
 .contacts-section {
     font-family: 'Montserrat', sans-serif;
-    height: 600px;
+    height: 650px;
     padding-top: 70px;
     background-image: linear-gradient(#ffffff, #cfcfcf);
 }
@@ -884,17 +889,12 @@ footer {
     width: 100%;
     top: 0;
     left: 0;
-    position: relative;
     display: flex;
     align-items: center;
     transition: top 0.3s;
-    justify-content: space-evenly;
+    z-index: 9999999;
 }
 
-.footer-column-left {
-    float: left;
-    width: 33%;
-}
 
 .footer-column-left img {
     height: 120px;
@@ -908,29 +908,6 @@ footer {
 }
 
 .footer-colum-center {
+    padding-left: 40px;
     width: 50%;
-}
-
-.footer-column-right {
-    float: right;
-    width: 33%;
-
-}
-
-.footer-contacts {
-    padding-right: 150px;
-    height: 70px ;
-    width: 240px ;
-    float: right;
-}
-
-.footer-phones-number {
-    text-decoration: none;
-    color: #FFFFFF;
-    margin-top: 25px;
-    line-height: 150%;
-}
-
-.footer-phones-number:hover {
-    color: yellow;
 }
