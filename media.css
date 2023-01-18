@@ -1,3 +1,17 @@
+@media screen and (max-width: 991px) {
+
+
+    .navbar {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .container {
+
+    }
+}
+
 @media screen and (min-width: 768px) and (max-width: 991px) {
 
 
@@ -57,14 +71,6 @@
         width: 60%;
     }
 
-    .container {
-        width: 700px;
-        position: relative;
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-    }
-
 
     .contacts {
         width: 100%;
@@ -118,19 +124,6 @@
 
 @media screen and (max-width: 850px) {
 
-    .logotype {
-        display: none;
-        padding-top: 15px;
-
-    }
-
-    .logotype-m {
-        display: flex;
-        justify-content: flex-start;
-        padding-top: 15px;
-
-    }
-
     .column-right {
         float: right;
         width: 80%;
@@ -138,10 +131,6 @@
         justify-content: space-around;
     }
 
-    .column-left {
-        float: left;
-        width: 20%;
-    }
 }
 
 
@@ -320,6 +309,13 @@
 @media screen and (max-width: 450px) {
     .part2 {
         margin-top: 45px;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .navbar {
+        display: flex;
+        justify-content: center;
     }
 }
 

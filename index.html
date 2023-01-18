@@ -1,6 +1,13 @@
 <html lang="en">
 <head>
     <meta name="viewport" content="width=device-width; initial-scale=1">
+    <meta name="viewport" content="width=device-width; initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
@@ -76,49 +83,46 @@
 </div>
 
 <!-- Header -->
-<header id="header">
-    <div class="column-left">
-        <div class="logotype" >
-            <img src="image/mainlogo.png" width="250" height="95">
-        </div>
-        <div class="logotype-m" >
-            <img src="image/crown.png" width="170" height="150">
-        </div>
 
-        <div class="logotype-m2" >
-            <img src="image/crown.png" width="120" height="120">
+<div class="header" id="header">
+
+    <div class="column-left">
+        <div class="logotype">
+            <img src="image/mainlogo.png" width="210" height="70px">
         </div>
     </div>
 
-    <div class="column-right">
-        <div class="nav-menu">
-            <ul class="menu">
-                <li>
-                    <a class="menu-items lng-home" href="#block1">ГОЛОВНА</a>
-                </li>
-                <li>
-                    <a class="menu-items lng-aboutCompany" href="#block2">ПРО КОМПАНІЮ</a>
-                </li>
-                <li>
-                    <a class="menu-items lng-services" href="#block3">ПОСЛУГИ</a>
-                </li>
-
-                <li>
-                    <a class="menu-items lng-contacts" href="#block4">КОНТАКТИ</a>
-                </li>
-            </ul>
-        </div>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <button class="navbar-toggler" type="button" style="border: none" data-toggle="collapse"
+                    data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <div class="dropdown-divider"></div>
+                    <a class="nav-link text-white" aria-current="page" id="btnHome" href="#block1">ГОЛОВНА</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="nav-link text-white" id="btnAbout" href="#block2">ПРО КОМПАНІЮ</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="nav-link text-white" id="btnServices" aria-current="page" href="#block3">ПОСЛУГИ</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="nav-link text-white" id="btnContacts" href="#block4">КОНТАКТИ</a>
+                </div>
+            </div>
+        </nav>
     </div>
     <div class="column-language">
         <div class="select-language">
             <select class="select">
                 <option class="option" style="background: #6A5ACD" value="ua" selected>UA</option>
-                <option class="option" value="en">EN</option>
+                <option class="option" value="en" selected>EN</option>
                 <option class="option" value="ru">RU</option>
             </select>
         </div>
     </div>
-</header>
+</div>
 
 
 
@@ -216,7 +220,7 @@
         </div>
     </div>
     <div class="container-services-main">
-        <div class="container">
+        <div class="container-content">
 
             <div class="card">
                 <div class="face face1 face1-1">

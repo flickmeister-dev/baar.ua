@@ -52,6 +52,29 @@ document.addEventListener('DOMContentLoaded',() => {
     e.preventDefault();
     e.target.reset();
   });
+
+  const collapse = document.getElementById('navbarNavAltMarkup')
+
+  var btnHome = document.getElementById("btnHome");
+  btnHome.addEventListener("click", function() {
+    collapse.classList.remove("show");
+  });
+
+  var btnAbout = document.getElementById("btnAbout");
+  btnAbout.addEventListener("click", function() {
+    collapse.classList.remove("show");
+  });
+
+  var btnServices = document.getElementById("btnServices");
+  btnServices.addEventListener("click", function() {
+    collapse.classList.remove("show");
+  });
+
+  var btnContacts = document.getElementById("btnContacts");
+  btnContacts.addEventListener("click", function() {
+    collapse.classList.remove("show");
+  });
+
 });
 
 var prevScrollpos = window.pageYOffset;
