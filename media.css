@@ -316,10 +316,3 @@
 }
 
 
-@media screen and (max-width: 370px) {
-    .navbar {
-        display: flex;
-        justify-content: center;
-    }
-}
-

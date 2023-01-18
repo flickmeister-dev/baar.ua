@@ -294,8 +294,8 @@ html{
 }
 
 .navbar {
-    padding-right: 90px;
-    width: 80%;
+    display: flex;
+    justify-content: flex-end;
     float: right;
     height: 100%;
     z-index: 99999;
@@ -327,7 +327,6 @@ html{
     z-index: 99999;
     position: absolute;
     right: 0;
-    top: 15px;
 }
 
 
@@ -900,6 +899,16 @@ footer {
     z-index: 9999999;
 }
 
+.logotype a img {
+    opacity: 1;
+}
+
+.column-left {
+    position: absolute;
+    left: 25px;
+    top: 0;
+    bottom: 0;
+}
 
 .footer-column-left img {
     padding-left: 35px;
