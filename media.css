@@ -32,6 +32,40 @@
     .main-content {
         padding-top: 190px;
     }
+
+    .container-aboutCompany {
+        padding: 0 20px 0 20px;
+    }
+
+    .aboutCompany-column-left {
+        max-width: 100%;
+        margin: 0 auto 0 auto;
+        padding: 0 25px 0 25px;
+    }
+
+    .aboutCompany-main {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .aboutCompany-title-main {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .aboutCompany-title-left-main {
+        padding-top: 0;
+    }
+
+    .aboutCompany-title-left {
+        padding-top: 0;
+    }
+
+    .aboutCompany-image {
+
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
@@ -49,60 +83,20 @@
         width: 300px;
     }
 
-    .aboutCompany-column-left {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        width: 100%;
-    }
-
-    .lng-aboutCompany1 {
-        height: 60px;
-        margin-bottom: 0;
-    }
-
-    .aboutCompany-title-left-main {
-        margin: 0;
-        padding: 0;
-        height: 130px;
-    }
-
-    .aboutCompany-title-left {
-        padding: 0;
-        margin: 0;
-        height: 130px;
-    }
-
-    .aboutCompany-title-main {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        max-width: 60%;
-    }
-
     .aboutCompany-column-right {
-        padding-top: 20px;
         width: 100%;
         display: flex;
         justify-content: center;
     }
-
-    .gallery {
-        width: 60%;
-    }
-
 
     .contacts {
         width: 100%;
-        padding-bottom: 70px;
     }
 
     .container-information {
         padding: 0;
 
     }
-
-
 
     .contacts-main-title {
         display: flex;
@@ -124,8 +118,6 @@
         background-image: linear-gradient(#d6d6d6, #a1a1a1);
     }
 
-
-
     .title-contacts {
         width: 100%;
     }
@@ -139,7 +131,6 @@
         width: 100%;
         height: 400px;
     }
-
 }
 
 @media screen and (max-width: 850px) {
@@ -182,49 +173,8 @@
         margin: 20px auto 25px auto
     }
 
-    .aboutCompany-main {
-        padding-left: 0;
-        top: 0;
-    }
-
     .border-row {
         width: 300px;
-    }
-
-    .aboutCompany-column-left {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        width: 100%;
-    }
-
-    .lng-aboutCompany1 {
-        height: 60px;
-        margin-bottom: 0;
-    }
-
-    .aboutCompany-title-left-main {
-        margin: 0;
-        padding: 0;
-        height: 130px;
-    }
-
-    .aboutCompany-title-left {
-        padding: 0;
-        margin: 0;
-        height: 130px;
-    }
-
-    .aboutCompany-title-main {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        max-width: 60%;
-    }
-
-
-    .aboutCompany-title-left {
-        padding-top: 40px;
     }
 
     .aboutCompany-column-right {
@@ -234,21 +184,15 @@
         justify-content: center;
     }
 
-    .gallery {
-        width: 90%;
-    }
-
-
     .contacts {
         width: 100%;
-        padding-bottom: 70px;
+        padding-bottom: 35px;
     }
 
     .container-information {
         padding: 0;
 
     }
-
 
     .contacts-main-title {
         display: flex;
@@ -288,16 +232,20 @@
         padding: 0;
     }
 
-    .logotype-m {
-        display: none;
+    .grid-item {
+        height: 220px;
+        width: 50%;
     }
 
-    .logotype-m2 {
-        display: flex;
-        justify-content: flex-start;
+    .grid-item a {
+        height: 100%;
+        width: 100%;
     }
 
-    .logotype-m2{
+    .grid-item a img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
     }
 }
 
@@ -317,14 +265,6 @@
 }
 
 @media screen and (max-width: 602px) {
-    .aboutCompany-title-left {
-        padding-top: 60px;
-    }
-
-    .aboutCompany-column-right {
-        padding-top: 50px;
-    }
-
     .part1 {
         font-size: 30px;
         line-height: 35px;
@@ -343,6 +283,24 @@
     .main-container {
         padding: 0 30px 0 30px;
     }
+}
+
+@media screen and (max-width: 480px) {
+    .grid-item {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 453px) {
+    .lng-aboutCompany1 {
+        font-size: 25px;
+        padding-bottom: 15px;
+    }
+
+    .aboutCompany-image {
+        height: 220px;
+    }
+
 }
 
 
