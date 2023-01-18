@@ -7,14 +7,34 @@
         justify-content: flex-end;
     }
 
-    .container {
+    .part1 {
+        font-size: 35px;
+        line-height: 45px;
+    }
 
+    .part2 {
+        font-size: 35px;
+        line-height: 45px;
+    }
+
+    .default-text {
+        font-size: 20px;
+    }
+
+    .main-container {
+        padding: 0 40px 0 40px;
+    }
+
+    .phones {
+        padding: 100px 0 50px 0;
+    }
+
+    .main-content {
+        padding-top: 190px;
     }
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
-
-
 
     .contacts-selection {
         height: 800px;
@@ -304,13 +324,27 @@
     .aboutCompany-column-right {
         padding-top: 50px;
     }
-}
 
-@media screen and (max-width: 450px) {
+    .part1 {
+        font-size: 30px;
+        line-height: 35px;
+    }
+
     .part2 {
-        margin-top: 45px;
+        margin-top: 15px;
+        font-size: 30px;
+        line-height: 35px;
+    }
+
+    .default-text {
+        font-size: 15px;
+    }
+
+    .main-container {
+        padding: 0 30px 0 30px;
     }
 }
+
 
 @media screen and (max-width: 370px) {
     .navbar {
