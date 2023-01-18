@@ -832,6 +832,11 @@ html{
     width: 50%;
 }
 
+.logotype a {
+    height: 100%;
+    cursor: pointer;
+}
+
 .map-container {
     float: left;
     width: 50%;
@@ -897,9 +902,9 @@ footer {
 
 
 .footer-column-left img {
-    height: 120px;
+    padding-left: 35px;
     position: relative;
-    left: 190px;
+    width: 150px;
 }
 
 .copyright {
