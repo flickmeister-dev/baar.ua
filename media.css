@@ -255,14 +255,6 @@
 
 @media screen and (max-width: 620px) {
 
-    .container {
-        width: 300px;
-        position: relative;
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-    }
-
     .border-row-contacts {
         width: 150px;
     }
@@ -300,6 +292,18 @@
 @media screen and (max-width: 480px) {
     .grid-item {
         width: 100%;
+    }
+
+    .logotype a img {
+        padding-left: 50px;
+    }
+
+    .navbar-nav {
+        width: 150px;
+    }
+
+    .navbar-toggler {
+        padding-right: 80px;
     }
 }
 

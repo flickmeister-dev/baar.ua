@@ -294,8 +294,8 @@ html{
 }
 
 .navbar {
-    display: flex;
-    justify-content: flex-end;
+    padding-right: 80px;
+    width: 80%;
     float: right;
     height: 100%;
     z-index: 99999;
@@ -312,21 +312,13 @@ html{
 
 }
 
-.logotype-m {
-    display: none;
-    padding-top: 15px;
-}
 
-.logotype-m2 {
-    display: none;
-    padding-top: 15px;
-
-}
 
 .column-language {
     z-index: 99999;
     position: absolute;
     right: 0;
+    top: 15px;
 }
 
 
@@ -899,16 +891,10 @@ footer {
     z-index: 9999999;
 }
 
-.logotype a img {
-    opacity: 1;
+.logotype a {
+    height: 100%;
 }
 
-.column-left {
-    position: absolute;
-    left: 25px;
-    top: 0;
-    bottom: 0;
-}
 
 .footer-column-left img {
     padding-left: 35px;
