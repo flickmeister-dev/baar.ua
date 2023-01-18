@@ -70,6 +70,14 @@
     .map-container {
         padding-top: 35px;
     }
+
+    .aboutCompany-title-main {
+        text-align: center;
+    }
+
+    .aboutCompany-title-left {
+        text-align: center;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
