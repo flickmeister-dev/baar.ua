@@ -1,0 +1,459 @@
+<html lang="en">
+<head>
+
+    <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <link href="media.css" rel="stylesheet" type="text/css">
+    <script src="index.js"></script>
+    <meta charset="UTF-8">
+    <title>baar.ua</title>
+</head>
+<body>
+
+<!-- feedback button -->
+<div class="fix-call-me">
+    <button name="open-call-me lng-open-call-me" id="open-call-me" class="button-call-me " >
+        <a class="lng-call-me">Замовити дзвінок</a>
+    </button>
+</div>
+
+<!-- feedback form -->
+<div class="feedback-body" id="feedback-body">
+    <div class="feedback-container">
+        <div class="feedback-form" id="feedback-form">
+            <div class="feedback-img" style="background-image: url('image/feedbackimg4.jpg')">
+
+            </div>
+            <h4 class="lng-feedback1">ЗВОРОТНІЙ ЗВ'ЯЗОК</h4>
+            <form class="contact-form" id="contact-form" name="contact-form">
+                <div class="input-name">
+                    <p class="lng-feedback2">Ім'я</p>
+                    <input required maxlength="25" class="form-input" name="name" id="name" type="text" minlength="3" onkeypress="noDigits(event)">
+                </div>
+                <div class="input-phone">
+                    <p class="lng-feedback3">Номер телефона</p>
+                    <input required class="form-input" id="phone" name="phone" type="tel" pattern="^(\+)?((\d{2,3}) ?\d|\d)(([ -]?\d)|( ?(\d{2,3}) ?)){5,12}\d$" minlength="10" maxlength="13" >
+                </div>
+                <div class="input-email">
+                    <p class="lng-feedback4">Введіть e-mail</p>
+                    <input class="form-input-email" id="email"  name="email" type="email"  pattern="^[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,4}$">
+                </div>
+                <div class="ur-message">
+                    <p class="lng-feedback5">Ваше повідомлення</p>
+                    <textarea name="message" id="message"></textarea>
+                </div>
+                <button class="form-btn" type="submit" id="send-feedback">НАДІСЛАТИ</button>
+            </form>
+            <div class="feedback-close" id="feedback-close">&#10006</div>
+        </div>
+    </div>
+</div>
+
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+
+<div class="feedback-end" id="feedback-end">
+    <div class="feedback-end-container">
+        <div class="feedback-title-container">
+            <div class="feedback-img-end" style="background-image: url('image/feedbackimg6.jpg')">
+
+            </div>
+            <div class="feedback-title">
+                <div class="thanks">
+                    <h3 class="lng-feedback-end1"> ДЯКУЄМО ЗА ЗВЕРНЕННЯ! </h3>
+                </div>
+                <div class="img-thanks">
+                    <img src="image/pngwing.com2.png" width="190" height="140">
+                </div>
+                <div class="later">
+                    <p class="lng-feedback-end2"> Незабаром наш менеджер зв'яжеться з вами. </p>
+                </div>
+                <div class="feedback-close" id="feedback-close-end">&#10006</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Header -->
+<header id="header">
+    <div class="column-left">
+        <div class="logotype" >
+            <img src="image/mainlogo.png" width="250" height="95">
+        </div>
+        <div class="logotype-m" >
+            <img src="image/crown.png" width="170" height="150">
+        </div>
+
+        <div class="logotype-m2" >
+            <img src="image/crown.png" width="120" height="120">
+        </div>
+    </div>
+
+    <div class="column-right">
+        <div class="nav-menu">
+            <ul class="menu">
+                <li>
+                    <a class="menu-items lng-home" href="#block1">ГОЛОВНА</a>
+                </li>
+                <li>
+                    <a class="menu-items lng-aboutCompany" href="#block2">ПРО КОМПАНІЮ</a>
+                </li>
+                <li>
+                    <a class="menu-items lng-services" href="#block3">ПОСЛУГИ</a>
+                </li>
+
+                <li>
+                    <a class="menu-items lng-contacts" href="#block4">КОНТАКТИ</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="column-language">
+        <div class="select-language">
+            <select class="select">
+                <option class="option" style="background: #6A5ACD" value="ua" selected>UA</option>
+                <option class="option" value="en">EN</option>
+                <option class="option" value="ru">RU</option>
+            </select>
+        </div>
+    </div>
+</header>
+
+
+
+<!-- selection 1: main -->
+<section id="block1" class="main-section">
+    <div class="main-container">
+        <div class="contact-main-container">
+            <div class="phones">
+                <a class="phones-number" href="tel:380684349198">+38 (066) 894-51-36 </a>
+                <a class="phones-number" href="tel:380684349198">+38 (068) 544-64-83 </a>
+            </div>
+        </div>
+        <div class="main-content">
+            <h1 class="part1 lng-part1">РЕАЛІЗУЄМО ВАШУ ІДЕЮ В РЕАЛЬНІСТЬ</h1>
+            <span class="part2 lng-part2">РЕМОНТ БУДИНКІВ І КВАРТИР У КИЄВІ І ОБЛАСТІ</span>
+            <p class="default-text lng-defaul-text1">Бригада професійних будівельників виконає роботи будь-якої складності зі знанням справи.</p>
+            <p class="default-text lng-defaul-text2">Ми нова сучасна компанія, яка не працює застарілими методами. Ми використовуємо все сучасне та найновіше обладнання, ми та компанія, яка стала на ринок будівництва зі спеціалістами, які вже мають великий досвід у своїй справі!</p>
+        </div>
+    </div>
+</section>
+<!-- selection 2: About Company -->
+<section id="block2" class="aboutCompany-section">
+    <div class="container-aboutCompany">
+        <div class="row">
+            <div class="border-row">
+                <h4 class="title-about-company lng-title-company">ПРО КОМПАНІЮ</h4>
+            </div>
+        </div>
+    </div>
+
+    <div class="aboutCompany-main">
+        <div class="aboutCompany-column-left">
+            <div class="aboutCompany-title-main">
+                <h2 class="lng-aboutCompany1"> ЯКІСТЬ - ЦЕ НАШЕ ВСЕ</h2>
+                <p class="aboutCompany-title-left-main lng-aboutCompany2">НАША КОМАНДА СКЛАДАЄТЬСЯ З ПРОФЕСІЙНИХ ФАХІВЦІВ,
+                    КОЖЕН З НИХ У СВОЇЙ СПРАВІ НАЙКРАЩИЙ ТА
+                    ЗРОБИТЬ СВОЮ РОБОТУ ЯКІСНО ТА ШВИДКО.</p>
+                <p class="aboutCompany-title-left lng-aboutCompany3" >Звернувшись до нас, ви отримаєте грамотну
+                    консультацію, якісну та відповідальну послугу щодо підбору професійної
+                    роботи вашого об'єкта під час будівництва.</p>
+            </div>
+        </div>
+        <div class="aboutCompany-column-right">
+            <div class="aboutCompany-image">
+                <img src="image/aboutCompanyImage2.jpg" alt width="500" height="380">
+            </div>
+        </div>
+    </div>
+
+    <div>
+    <div class="gallery-container">
+        <div class="gallery">
+            <div class="grid-item">
+            <a data-fslightbox="gallery" class="gallery-item" href="image/aboutCompanyImage2.jpg">
+                <img src="image/aboutCompanyImage2.jpg" width="170" height="140">
+            </a>
+            </div>
+            <div class="grid-item">
+                <a data-fslightbox="gallery" class="gallery-item" href="image/aboutCompanyImage2.jpg">
+                    <img src="image/aboutCompanyImage2.jpg" width="170" height="140">
+                </a>
+            </div>
+            <div class="grid-item">
+                <a data-fslightbox="gallery" class="gallery-item" href="image/aboutCompanyImage2.jpg">
+                    <img src="image/aboutCompanyImage2.jpg" width="170" height="140">
+                </a>
+            </div>
+            <div class="grid-item">
+                <a data-fslightbox="gallery" class="gallery-item" href="image/aboutCompanyImage2.jpg">
+                    <img src="image/aboutCompanyImage2.jpg" width="170" height="140">
+                </a>
+            </div>
+            <div class="grid-item">
+                <a data-fslightbox="gallery" class="gallery-item" href="image/aboutCompanyImage2.jpg">
+                    <img src="image/aboutCompanyImage2.jpg" width="170" height="140">
+                </a>
+            </div >
+            <div class="grid-item">
+                <a data-fslightbox="gallery" class="gallery-item" href="image/aboutCompanyImage2.jpg">
+                    <img src="image/aboutCompanyImage2.jpg" width="170" height="140">
+                </a>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+
+<!-- selection 3: Services-->
+<section id="block3" class="services-section">
+    <div class="container-services">
+        <div class="row-services">
+            <div class="border-row-services">
+                <h4 class="row-title-services lng-title-services">ПОСЛУГИ</h4>
+            </div>
+        </div>
+    </div>
+    <div class="container-services-main">
+        <div class="container">
+
+            <div class="card">
+                <div class="face face1 face1-1">
+                    <div class="content">
+                        <img src="image/electric-pole.png">
+                        <h6 class="lng-service1">ЕЛЕКТРОМОНТАЖ</h6>
+                    </div>
+                </div>
+                <div class="face face2">
+                    <div class="content-1">
+                        <ul class="service-content">
+                            <li class="lng-service-content1">- Монтаж проводки</li>
+                            <li class="lng-service-content2">- Перенесення, заміна розеток та вимикачів</li>
+                            <li class="lng-service-content3">- Розведення розеток, освітлення під нову кухню</li>
+                            <li class="lng-service-content4">- Окремі лінії на техніку</li>
+                            <li class="lng-service-content5">- Електропідігрів будь-якої підлоги</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="face face1 face1-2" >
+                    <div class="content">
+                        <img src="image/water-pipe.png">
+                        <h5 class="lng-service2">САНТЕХНІЧНІ</h5>
+                    </div>
+                </div>
+                <div class="face face2">
+                    <div class="content">
+                        <ul class="service-content">
+                            <li class="lng-service-content11">- Встановлення сантехнічного обладнання у ванній кімнаті та кухні</li>
+                            <li class="lng-service-content21">- Монтаж труб водопостачання</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="face face1 face1-3">
+                    <div class="content">
+                        <img src="image/jackhammer.png">
+                        <h5 class="lng-service3">ДЕМОНТАЖНІ</h5>
+                    </div>
+                </div>
+                <div class="face face2">
+                    <div class="content">
+                        <ul class="service-content">
+                            <li class="lng-service-content31">- Всі види демонтажних робіт</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="face face1 face1-4">
+                    <div class="content">
+                        <img src="image/tiles.png">
+                        <h6 class="lng-service4">ПЛИТКА</h6>
+                    </div>
+                </div>
+                <div class="face face2">
+                    <div class="content-2">
+                        <ul class="service-content">
+                            <li class="lng-service-content41">- Всі види укладання плитки</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="face face1 face1-5">
+                    <div class="content">
+                        <img src="image/plastering.png">
+                        <h5 class="lng-service5">ШТУКАТУРНІ</h5>
+                    </div>
+                </div>
+                <div class="face face2">
+                    <div class="content-3">
+                        <ul class="service-content">
+                            <li class="lng-service-content51">- Ручна штукатурка по маякам</li>
+                            <li class="lng-service-content52">- Ручна штукатурка відкосів</li>
+                            <li class="lng-service-content53">- Грунтування стін</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="face face1 face1-6">
+                    <div class="content">
+                        <img src="image/roller.png">
+                        <h5 class="lng-service6">МАЛЯРНІ</h5>
+                    </div>
+                </div>
+                <div class="face face2">
+                    <div class="content">
+                        <ul class="service-content">
+                            <li class="lng-service-content61">- Шпаклювання бетонної стелі під фарбування чи шпалери</li>
+                            <li class="lng-service-content62">- Шпаклювання, фарбування багету</li>
+                            <li class="lng-service-content63">- Наклейка склополотна</li>
+                            <li class="lng-service-content64">- Фарбування стін і стелі водоемульсійною фарбою</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="face face1 face1-7">
+                    <div class="content">
+                        <img src="image/wallpaper.png">
+                        <h6 class="lng-service7">ШПАЛЕРИ</h6>
+                    </div>
+                </div>
+                <div class="face face2">
+                    <div class="content-4">
+                        <ul class="service-content">
+                            <li class="lng-service-content71">- Шпалери в смужку</li>
+                            <li class="lng-service-content72">- Дрібний візерунок</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="face face1 face1-8">
+                    <div class="content">
+                        <img src="image/brick.png">
+                        <h5 class="lng-service8">МУЛЯРНІ</h5>
+                    </div>
+                </div>
+                <div class="face face2">
+                    <div class="content">
+                        <ul class="service-content">
+                            <li class="lng-service-content81">- Зведення і ремонт житлових будинків і мостів</li>
+                            <li class="lng-service-content82">- Зведення арок і колон</li>
+                            <li class="lng-service-content83">- Кладка несучих стін і фундаменту</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="face face1 face1-9">
+                    <div class="content">
+                        <img src="image/customer-support.png">
+                        <h5 class="lng-service9">МОНТАЖНІ</h5>
+                    </div>
+                </div>
+                <div class="face face2">
+                    <div class="content">
+                        <ul class="service-content">
+                            <li class="lng-service-content91">- Монтаж загально будівельних конструкцій</li>
+                            <li class="lng-service-content92">- Монтаж залізобетонних і металевих конструкцій</li>
+                            <li class="lng-service-content93">- Монтаж санітарно-технічних і електромонтажних</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</section>
+
+<!-- selection 4: Contacts-->
+
+<section id="block4" class="contacts-section">
+        <div class="contacts">
+            <div class="container-contacts">
+                <div class="row-contacts">
+                    <div class="border-row-contacts">
+                        <h4 class="title-contacts lng-title-contacts">КОНТАКТИ</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="container-information">
+                <div class="contacts-item">
+                    <span class="contacts-main-title lng-adress">Адреса:</span>
+                    <span class="contacts-title lng-location">м. Київ, Сім‘ї Стешенка 9А</span>
+                </div>
+
+                <div class="contacts-item">
+                    <span class="contacts-main-title lng-phones">Телефони:</span>
+                    <span class="contacts-title">+38 (066) 894-51-36 <br> +38 (068) 544-64-83</span>
+                </div>
+
+                <div class="contacts-item">
+                    <span class="contacts-main-title">E-mail:</span>
+                    <span class="contacts-title">baar.ua.supp@gmail.com</span>
+                </div>
+
+                <div class="contacts-item">
+                    <span class="contacts-main-title lng-social">Ми в соцмережах:</span>
+                    <div class="social-networks">
+                        <a href="https://www.instagram.com/baarteams/"><img src="image/instlogomain.png" alt="inst" class="social"></a>
+                        <a href="https://www.facebook.com/andriy.volosyachik.9"><img src="image/facebooklogomain.png" alt="facebook" class="social"></a>
+                        <a href="https://t.me/flickmeister"><img src="image/telegramlogomain.png" alt="telegramLogo" class="social" ></a>
+                        <a href="https://t.me/flickmeister"><img src="image/tiktok.png" alt="tiktokLogo" class="social" ></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="map-container">
+            <div class="container-contacts">
+                <div class="row-contacts">
+                    <div class="border-row-contacts">
+                        <h4 class="title-contacts lng-title-office">НАШ ОФІС</h4>
+                    </div>
+                </div>
+            </div>
+            <div id="map" class="map">
+                <script async
+                        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCxtwsDDqDxItxoCh3HeQiN1QcYiXWztHA&callback=initMap">
+                </script>
+            </div>
+        </div>
+</section>
+
+<footer>
+    <div class="footer-column-left">
+        <div class="footer-logotype">
+        </div>
+    </div>
+
+    <div class="footer-colum-center">
+        <span class="copyright">© 2022 Baar.org. Всі права захищені.</span>
+    </div>
+
+    <div class="column-right">
+
+    </div>
+</footer>
+
+<script src="fslightbox.js"></script>
+<script src="language.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

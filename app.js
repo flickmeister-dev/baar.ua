@@ -1,0 +1,28 @@
+const select = document.querySelector('select');
+const allLang = ['ua', 'en', 'ru']
+
+select.addEventListener('change', changeURLLanguage);
+
+function changeURLLanguage(){
+  let lang = select.value;
+  location.href = window.location.pathname + '#'+lang;
+  location.reload();
+}
+
+function changeLanguage(){
+  let hash = window.location.hash;
+  hash = hash.substr(1);
+  console.log(hash);
+  if(!allLang.includes(hash)){
+    location.href = window.location.pathname + '#ua';
+  }
+
+  select.value = hash;
+  document.querySelector('.lng-home').innerHTML = langArr['home'][hash];
+  for (let key in langArr){
+    document.querySelector('.lng-'+key).innerHTML = langArr[key][hash];
+
+  }
+}
+
+changeLanguage();
