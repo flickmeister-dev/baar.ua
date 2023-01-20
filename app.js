@@ -15,6 +15,7 @@ function changeLanguage(){
   console.log(hash);
   if(!allLang.includes(hash)){
     location.href = window.location.pathname + '#ua';
+    location.reload()
   }
 
   select.value = hash;
