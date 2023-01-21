@@ -312,6 +312,10 @@
 
 @media screen and (max-width: 480px) {
 
+    .aboutCompany-image {
+        width: 100%;
+    }
+
     .grid-item {
         width: 100%;
     }
