@@ -4,7 +4,13 @@ document.addEventListener('DOMContentLoaded',() => {
   const openCallMe = document.getElementById('open-call-me');
   const closeCallMe = document.querySelector('.feedback-close');
   const feedBackBodyEnd = document.getElementById('feedback-end');
-  const sendFeedBack = document.getElementById('send-feedback');
+  const collapse = document.getElementById('navbarNavAltMarkup')
+  const btnHome = document.getElementById("btnHome");
+  const btnAbout = document.getElementById("btnAbout");
+  const btnServices = document.getElementById("btnServices");
+  const btnContacts = document.getElementById("btnContacts");
+  const closeEnd = document.getElementById('feedback-close-end');
+
   const sendEmail = () => {
     Email.send({
       Host : "smtp.elasticemail.com",
@@ -18,26 +24,23 @@ document.addEventListener('DOMContentLoaded',() => {
         + "<br> Email: " + document.getElementById("email").value
         + "<br> Повідомлення: " + document.getElementById("message").value
     }).then(() => {
-      localStorage.setItem('emailSent', Date.now().toString());
-      feedBackBody.style.display='none';
-      feedBackBodyEnd.style.display='block';
-    }
-  );
+        localStorage.setItem('emailSent', Date.now().toString());
+        feedBackBody.style.display='none';
+        feedBackBodyEnd.style.display='block';
+      }
+    );
   };
-
-  const closeEnd = document.getElementById('feedback-close-end');
 
   openCallMe.onclick = function () {
     const sentDateString = localStorage.getItem('emailSent');
-    const emailSent = sentDateString && (Date.now() - parseInt(sentDateString)) < 3600000; //60min
+    const emailSent = sentDateString && (Date.now() - parseInt(sentDateString)) < 3600000; // 60min
+
     if (emailSent) {
       feedBackBodyEnd.style.display='block';
-
     } else {
       feedBackBody.style.display='block';
     }
   };
-
 
   closeCallMe.onclick = function () {
       feedBackBody.style.display='none';
@@ -53,42 +56,37 @@ document.addEventListener('DOMContentLoaded',() => {
     e.target.reset();
   });
 
-  const collapse = document.getElementById('navbarNavAltMarkup')
 
-  var btnHome = document.getElementById("btnHome");
   btnHome.addEventListener("click", function() {
     collapse.classList.remove("show");
   });
 
-  var btnAbout = document.getElementById("btnAbout");
   btnAbout.addEventListener("click", function() {
     collapse.classList.remove("show");
   });
 
-  var btnServices = document.getElementById("btnServices");
   btnServices.addEventListener("click", function() {
     collapse.classList.remove("show");
   });
 
-  var btnContacts = document.getElementById("btnContacts");
   btnContacts.addEventListener("click", function() {
     collapse.classList.remove("show");
   });
-
 });
 
-var prevScrollpos = window.pageYOffset;
+let prevScrollpos = window.pageYOffset;
+
 window.onscroll = function() {
     const currentScrollPos = window.pageYOffset;
+
     if (prevScrollpos > currentScrollPos) {
         document.getElementById("header").style.top = "0";
     } else {
         document.getElementById("header").style.top = "-80px";
     }
+
     prevScrollpos = currentScrollPos;
 };
-
-
 
 function initMap() {
     const uluru = { lat: 50.4348415, lng: 30.3786083 };
