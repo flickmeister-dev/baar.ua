@@ -1,5 +1,9 @@
 @media screen and (max-width: 991px) {
 
+    .aboutCompany-image {
+        width: 100%;
+    }
+
     .gallery {
         display: flex;
         flex-wrap: wrap;
@@ -196,6 +200,10 @@
 
     .border-row {
         width: 300px;
+    }
+
+    .aboutCompany-image {
+        width: 100%;
     }
 
     .aboutCompany-column-right {
