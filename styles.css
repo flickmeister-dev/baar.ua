@@ -494,7 +494,6 @@ html{
 }
 
 .aboutCompany-main {
-
     top: 0;
 }
 
@@ -502,11 +501,9 @@ html{
     width: 70%;
 }
 
-
 .aboutCompany-Text {
     text-align: left;
 }
-
 
 .row, .row-services, .row-contacts {
     display: flex;
@@ -564,7 +561,7 @@ html{
 
 .aboutCompany-image {
     height: 400px;
-    width: 450px;
+    width: 600px;
 }
 
 .aboutCompany-image a {
@@ -652,6 +649,7 @@ html{
 }
 
 .container-services-main {
+
     margin: 0;
     padding: 0;
     display: flex;
