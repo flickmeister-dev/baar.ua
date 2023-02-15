@@ -182,6 +182,18 @@
 
 @media screen and (max-width: 768px) {
 
+    .gift-content {
+        width: 90%;
+    }
+
+    .gift-image {
+        width: 100%;
+    }
+
+    .gift-image img {
+        width: 100%;
+    }
+
     .contacts-selection {
         height: 100vh;
     }
@@ -318,6 +330,17 @@
     }
 }
 
+@media screen and (max-width: 550px) {
+    .gift-content {
+       height: 350px;
+    }
+
+    .gift-image img {
+        height: 350px;
+    }
+
+}
+
 @media screen and (max-width: 480px) {
 
     .aboutCompany-image {
@@ -357,6 +380,16 @@
     .lng-aboutCompany1 {
         font-size: 25px;
         padding-bottom: 15px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .gift-content {
+        height: 300px;
+    }
+
+    .gift-image img {
+        height: 300px;
     }
 }
 

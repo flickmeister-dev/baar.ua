@@ -10,6 +10,9 @@ document.addEventListener('DOMContentLoaded',() => {
   const btnServices = document.getElementById("btnServices");
   const btnContacts = document.getElementById("btnContacts");
   const closeEnd = document.getElementById('feedback-close-end');
+  const openGift = document.getElementById('open-gift');
+  const gift = document.getElementById('gift');
+  const giftCLose = document.getElementById('gift-close');
 
   const sendEmail = () => {
     Email.send({
@@ -49,6 +52,15 @@ document.addEventListener('DOMContentLoaded',() => {
   closeEnd.onclick = function () {
       feedBackBodyEnd.style.display='none';
   };
+
+  giftCLose.onclick = function () {
+    gift.style.display='none';
+  };
+
+  openGift.onclick = function () {
+    gift.style.display='block';
+  };
+
 
   form.addEventListener('submit', (e) => {
     sendEmail();
