@@ -933,40 +933,39 @@ footer {
     width: 50%;
 }
 
-/*.gift {*/
-/*    display: none;*/
-/*    width: 100%;*/
-/*    height: 100%;*/
-/*    left: 0;*/
-/*    top: 0;*/
-/*    position: fixed;*/
-/*    background-color: rgba(0,0,0,0.6);*/
-/*    z-index: 999999;*/
-/*}*/
+.gift {
+    display: none;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: fixed;
+    background-color: rgba(0,0,0,0.6);
+    z-index: 999999;
+}
 
-/*.container-gift {*/
-/*    display: flex;*/
-/*    width: 100%;*/
-/*    height: 100%;*/
-/*}*/
+.container-gift {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
 
-/*.gift-content {*/
-/*    background-color: white;*/
-/*    margin: auto;*/
-/*    color: black;*/
-/*    width: 700px;*/
-/*    height: 500px;*/
-/*    position: relative;*/
-/*}*/
+.gift-content {
+    background-color: white;
+    margin: auto;
+    color: black;
+    width: 700px;
+    height: 500px;
+    position: relative;
+}
 
-/*.gift-close {*/
-
-/*    position: absolute;*/
-/*    top: 5px;*/
-/*    right: 15px;*/
-/*    font-size: 20px;*/
-/*    cursor: pointer;*/
-/*}*/
+.gift-close {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+}
 
 .footer-colum-right {
     padding-right: 2px;
