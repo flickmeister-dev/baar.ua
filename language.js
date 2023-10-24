@@ -122,7 +122,7 @@
       en: "Address:",
       ru: "Адрес:",
     },
-    "location": {
+    "locations": {
       ua: "с.Чайка вул.Лобановського 26",
       en: "Chaika village, 26 Lobanovskoho St",
       ru: "с.Чайка ул.Лобановского 26",
